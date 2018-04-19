@@ -213,7 +213,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 305b78b573eb88644904e703c4fbbd18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fireWeaponMixins: {fileID: 0}
+  fireWeaponMixins: {fileID: 1545064663}
 --- !u!4 &997608243
 Transform:
   m_ObjectHideFlags: 0
@@ -303,6 +303,7 @@ GameObject:
   - component: {fileID: 1545064663}
   - component: {fileID: 1545064662}
   - component: {fileID: 1545064665}
+  - component: {fileID: 1545064666}
   m_Layer: 0
   m_Name: WeaponLogic
   m_TagString: Untagged
@@ -334,11 +335,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f63ed8077d2596d4a95a0b6a20f11a63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  checkMixins:
-  - {fileID: 1545064665}
+  checkMixins: []
   actionMixins:
   - {fileID: 1545064662}
   - {fileID: 1545064665}
+  - {fileID: 1545064666}
 --- !u!4 &1545064664
 Transform:
   m_ObjectHideFlags: 0
@@ -364,7 +365,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da8c9f37bb54e874b87eaaa99fdaa600, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldownTimer: 0
+  cooldownTimer: 1
+--- !u!114 &1545064666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1545064661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d92506a0e7e2c840adf47493f5abbe5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxClipSize: 10
+  ammoPerShot: 1
 --- !u!1 &1564150474
 GameObject:
   m_ObjectHideFlags: 0

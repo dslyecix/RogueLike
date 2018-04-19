@@ -10,7 +10,8 @@ public class FireRaycast : MixinBase {
 	public override void Action()
     {
         RaycastHit hit;
-        Physics.Raycast(firePosition.position, firePosition.forward, out hit, range);
+        if (Physics.Raycast(firePosition.position, firePosition.forward, out hit, range))
+            Debug.Log("Raycast fired");
     }
 
 }

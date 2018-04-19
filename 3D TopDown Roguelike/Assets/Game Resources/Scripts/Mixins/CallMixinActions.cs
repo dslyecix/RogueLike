@@ -13,6 +13,7 @@ public class CallMixinActions : MixinBase {
         {
             if (!checkMixins[i].Check())
             {
+                Debug.Log("oops! " + checkMixins[i].name + " fucked up");
                 return;
             }
         }
@@ -23,4 +24,6 @@ public class CallMixinActions : MixinBase {
         }
     }
     
+    
+
 }
