@@ -5,7 +5,7 @@ using UnityEngine;
 public class Cooldown : MixinBase {
 
     [SerializeField] private float cooldownTimer;
-    private float cooldownTime;
+    private float cooldownTime = 0f;
     private bool isReady;
 	
     public override bool Check()

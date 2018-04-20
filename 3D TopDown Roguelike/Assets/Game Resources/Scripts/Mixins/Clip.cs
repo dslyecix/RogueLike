@@ -21,6 +21,7 @@ public class Clip : MixinBase {
         }
         return false;
     }
+    
     public override void Action()
     {
         currentClipSize -= ammoPerShot;

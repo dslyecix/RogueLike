@@ -9,15 +9,17 @@ public class CallMixinActions : MixinBase {
 
     public void CallActions()
     {
-        for (int i = 0; i < checkMixins.Count; i++)
+        if (checkMixins != null)
         {
-            if (!checkMixins[i].Check())
+            for (int i = 0; i < checkMixins.Count; i++)
             {
-                Debug.Log("oops! " + checkMixins[i].name + " fucked up");
-                return;
+                if (!checkMixins[i].Check())
+                {
+                    return;
+                }
             }
-        }
-        
+        }   
+
         for (int i = 0; i < actionMixins.Count; i++)
         {
             actionMixins[i].Action();

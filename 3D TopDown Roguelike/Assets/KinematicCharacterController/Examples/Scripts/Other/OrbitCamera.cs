@@ -71,6 +71,10 @@ namespace KinematicCharacterController.Examples
             PlanarDirection = Vector3.forward;
         }
 
+    void Update()
+    {
+        UpdateWithInput(Time.deltaTime, Input.mouseScrollDelta.magnitude, Vector3.up);
+    }
         // Set the transform that the camera will orbit around
         public void SetFollowTransform(Transform followTransform)
         {
