@@ -6,6 +6,8 @@ using UnityEngine;
 public class Player : MonoBehaviour {
 
     [SerializeField] CallMixinActions fireWeaponMixins;
+    [SerializeField] MixinBase reloadMixin;
+
     public float moveSpeed;
 
 	// Use this for initialization
@@ -15,18 +17,28 @@ public class Player : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKey(KeyCode.Space))
+		if (Input.GetButtonDown("Fire1"))
         {
             Debug.Log("Space bar detected");
             fireWeaponMixins.CallActions();
         }
+
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            reloadMixin.CheckAndAction();
+        }
 	
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
+        float mouseHorizontal = Input.GetAxis("Mouse X");
+
 
         this.transform.position += this.transform.forward * vertical * moveSpeed * Time.deltaTime;
         this.transform.position += this.transform.right * horizontal * moveSpeed * Time.deltaTime;
         
+
+        Quaternion newDir = Quaternion.RotateTowards(transform.rotation, )
+         this.transform.rotation = Quaternion.FromToRotation(this.transform.rotation, )
     }
 
 

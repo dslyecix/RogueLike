@@ -13,4 +13,10 @@ public class MixinBase : MonoBehaviour {
     {
 
     }
+
+    public virtual void CheckAndAction()
+    {
+        if (Check())
+            Action();
+    }
 }
