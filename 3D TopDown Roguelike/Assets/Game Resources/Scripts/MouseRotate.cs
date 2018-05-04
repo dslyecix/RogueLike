@@ -11,10 +11,10 @@ public class MouseRotate : MonoBehaviour {
     private float pitch = 0.0f;
 
     void Update () {
-        yaw += speedH * Input.GetAxis("Mouse X");
+        yaw = speedH * Input.GetAxis("Mouse X");
         //pitch -= speedV * Input.GetAxis("Mouse Y");
 
-        transform.eulerAngles = new Vector3(0f, yaw, 0f);
+        transform.rotation *= Quaternion.AngleAxis(yaw * Time.deltaTime, Vector3.up);
     }
 }
 

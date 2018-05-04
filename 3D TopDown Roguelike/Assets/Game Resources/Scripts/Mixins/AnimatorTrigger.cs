@@ -8,12 +8,7 @@ public class AnimatorTrigger : MixinBase {
     [SerializeField] string trigger;
     private bool isReady = true;
 
-    public void AnimComplete(){
-        Debug.Log("Animation Event Triggered: " + trigger.ToString());
-        isReady = true;
-    }
-
-    public override bool Check()
+    public override bool GlobalCheck()
     {
         return isReady;
     }
@@ -21,7 +16,11 @@ public class AnimatorTrigger : MixinBase {
     public override void Action()
     {
         animator.SetTrigger(trigger);
-        isReady = false;
+    }
+
+    public void AnimComplete(){
+        Debug.Log("Animation Event Triggered: " + trigger);
+        isReady = true;
     }
 
 }

@@ -8,8 +8,8 @@ public class FireProjectile : MixinBase {
     [SerializeField] Transform muzzlePoint;
 
     public override void Action()
-    {
-        Instantiate(bulletPrefab, muzzlePoint.position, Quaternion.LookRotation(muzzlePoint.forward, Vector3.up));
+    {   
+        Instantiate(bulletPrefab, muzzlePoint.position, muzzlePoint.rotation);
     }
 
 }

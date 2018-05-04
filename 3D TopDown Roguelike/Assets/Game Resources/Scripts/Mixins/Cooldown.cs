@@ -6,9 +6,9 @@ public class Cooldown : MixinBase {
 
     [SerializeField] private float cooldownTimer;
     private float cooldownTime = 0f;
-    private bool isReady;
+    private bool isReady = true;
 	
-    public override bool Check()
+    public override bool GlobalCheck()
     {
         return isReady;
     }
