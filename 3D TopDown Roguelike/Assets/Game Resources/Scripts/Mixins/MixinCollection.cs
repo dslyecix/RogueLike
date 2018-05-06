@@ -2,15 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
 public class MixinCollection : MixinBase {
-
-    public string name;
 
     // This class will first check all of the GlobalChecks for a given set of Mixins,
     // then run through the individual mixins' LocalChecks -> Actions
 
     // Can execute all of this with MixinCollection.CheckAndAction(); (Globals are automatically checked)
-
+    [HideInInspector]
 	public List<MixinBase> actionMixins;
 
     public override void Action()

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Overheat : MonoBehaviour {
+public class Overheat : MixinBase {
 
 	// Use this for initialization
 	void Start () {

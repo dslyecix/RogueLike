@@ -1,5 +1,7 @@
 fileFormatVersion: 2
 guid: f39622eee2e2ef142a0be0f718b2eb09
+labels:
+- Mixin
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
