@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class MixinCollection : MixinBase {
 
+    public string name;
+
     // This class will first check all of the GlobalChecks for a given set of Mixins,
     // then run through the individual mixins' LocalChecks -> Actions
 

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FloatData : MonoBehaviour {
+public class FloatData : MixinBase {
 
 	[SerializeField] float data;
     public float maxValue;

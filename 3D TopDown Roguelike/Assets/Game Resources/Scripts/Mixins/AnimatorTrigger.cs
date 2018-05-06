@@ -18,7 +18,8 @@ public class AnimatorTrigger : MixinBase {
         animator.SetTrigger(trigger);
     }
 
-    public void AnimComplete(){
+    public void AnimationComplete()
+    {
         Debug.Log("Animation Event Triggered: " + trigger);
         isReady = true;
     }
