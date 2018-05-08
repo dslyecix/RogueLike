@@ -139,8 +139,8 @@ GameObject:
   - component: {fileID: 4079365808916654}
   - component: {fileID: 114836238759708468}
   - component: {fileID: 114213554797600152}
-  - component: {fileID: 114139944633903412}
   - component: {fileID: 114004506807679966}
+  - component: {fileID: 114766939361983040}
   m_Layer: 0
   m_Name: GunLogic
   m_TagString: Untagged
@@ -238,7 +238,7 @@ Transform:
   m_GameObject: {fileID: 1546630604978268}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.038, z: 0.196}
-  m_LocalScale: {x: 0.044724286, y: 0.07334477, z: 0.48750496}
+  m_LocalScale: {x: 0.049196716, y: 0.080679245, z: 0.6061674}
   m_Children: []
   m_Father: {fileID: 4401312664445070}
   m_RootOrder: 0
@@ -755,23 +755,9 @@ MonoBehaviour:
   Name: AnimatorTrigger
   showMixin: 0
   showInfo: 1
-  animator: {fileID: 95048626134033472}
+  animators:
+  - {fileID: 95048626134033472}
   trigger: Fire
---- !u!114 &114139944633903412
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1744962442107534}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da8c9f37bb54e874b87eaaa99fdaa600, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Cooldown
-  showMixin: 0
-  showInfo: 1
-  cooldownTimer: 0.1
 --- !u!114 &114213554797600152
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -802,6 +788,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fireWeaponMixins: {fileID: 114836238759708468}
+--- !u!114 &114766939361983040
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1744962442107534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6623f4bbab8cfaa42890e9c05c8ebe0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Charge
+  showMixin: 1
+  showInfo: 0
+  chargeTime: 1
 --- !u!114 &114836238759708468
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -818,8 +819,8 @@ MonoBehaviour:
   showInfo: 0
   actionMixins:
   - {fileID: 114213554797600152}
-  - {fileID: 114139944633903412}
   - {fileID: 114004506807679966}
+  - {fileID: 114766939361983040}
 --- !u!136 &136121334543319780
 CapsuleCollider:
   m_ObjectHideFlags: 1

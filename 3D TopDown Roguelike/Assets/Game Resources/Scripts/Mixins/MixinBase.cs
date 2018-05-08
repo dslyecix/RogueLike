@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[CreateAssetMenu]
 [System.Serializable]
-public class MixinBase : MonoBehaviour {
+public class MixinBase : ScriptableObject {
     
     public string Name;
 
     [HideInInspector]
-    public bool showMixin = false;
+    public bool showMixin = true;
     [HideInInspector]
     public bool showInfo;
 

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[CreateAssetMenu]
 [System.Serializable]
 public class MixinCollection : MixinBase {
 
@@ -9,7 +10,7 @@ public class MixinCollection : MixinBase {
     // then run through the individual mixins' LocalChecks -> Actions
 
     // Can execute all of this with MixinCollection.CheckAndAction(); (Globals are automatically checked)
-    [HideInInspector]
+    //[HideInInspector]
 	public List<MixinBase> actionMixins;
 
     public override void Action()

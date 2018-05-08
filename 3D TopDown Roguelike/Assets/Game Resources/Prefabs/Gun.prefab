@@ -231,7 +231,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1905594186696534}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.517, y: 1, z: 0.116}
+  m_LocalPosition: {x: 0.972, y: 1, z: 0.116}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4671473437694664}
@@ -640,7 +640,8 @@ MonoBehaviour:
   Name: AnimatorTrigger
   showMixin: 0
   showInfo: 1
-  animator: {fileID: 95287662119571886}
+  animators:
+  - {fileID: 95287662119571886}
   trigger: Fire
 --- !u!114 &114269132554419356
 MonoBehaviour:
@@ -670,8 +671,8 @@ MonoBehaviour:
   showInfo: 0
   actionMixins:
   - {fileID: 114123644289108204}
-  - {fileID: 114855019028768800}
   - {fileID: 114432522492937412}
+  - {fileID: 114855019028768800}
 --- !u!114 &114432522492937412
 MonoBehaviour:
   m_ObjectHideFlags: 1
