@@ -186,6 +186,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4841612615494288}
+  - component: {fileID: 114739940912239554}
   m_Layer: 0
   m_Name: GunLogic
   m_TagString: Untagged
@@ -226,8 +227,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1905594186696534}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.972, y: 1, z: 0.116}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4671473437694664}
@@ -634,6 +635,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fireWeaponMixins: {fileID: 0}
+--- !u!114 &114739940912239554
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1987254637567556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e60f48c9faa5fc24da47033b58c42756, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collection: {fileID: 11400000, guid: d77a696458762f541bdd0b5e42b000e0, type: 2}
+  key: 99
 --- !u!136 &136957726108310518
 CapsuleCollider:
   m_ObjectHideFlags: 1

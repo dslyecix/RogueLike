@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5330a1bac0d1da741a43f9c3086fde3f, type: 3}
+  m_Name: New Fire Projectile
+  m_EditorClassIdentifier: 
+  Name: 
+  showMixin: 1
+  showInfo: 0
+  bulletPrefab: {fileID: 1933994282474646, guid: 18a460428f50882409fb7a12b8b08a08,
+    type: 2}
+  fireForce: 100
+  muzzlePoints:
+  - {fileID: 4671473437694664, guid: 3c3fd7af2f729b94aab69efbd1c27886, type: 2}

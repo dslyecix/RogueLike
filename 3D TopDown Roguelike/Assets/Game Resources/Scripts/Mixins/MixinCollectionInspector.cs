@@ -107,51 +107,51 @@
 //             height = lineHeightSpace * i;
 //             return height;
 //         };
-
-//         mixinList.onAddDropdownCallback = (Rect rect, ReorderableList list) =>
-//         {
-//             GenericMenu dropdownMenu = new GenericMenu();
-//             string[] mixinGUIDs = AssetDatabase.FindAssets("l:Mixin");
-
-//             for (int i = 0; i < mixinGUIDs.Length; i++)
-//             {
-//                 string path = AssetDatabase.GUIDToAssetPath(mixinGUIDs[i]);
-//                 string menuPath = path.Replace("Assets/Game Resources/Scripts/", "");
-
-//                 dropdownMenu.AddItem (new GUIContent(menuPath), false, AddItem, new AssetInfo { assetPath = path } );
-//             }
-
-//             dropdownMenu.ShowAsContext();
-//         };
-
-//         mixinList.onRemoveCallback = (ReorderableList List) =>
-//         {
-//             int i = mixinList.index;
-//             mixinCollection.actionMixins[i].showMixin = true;
-//             mixinCollection.actionMixins[i].hideFlags = HideFlags.None;
-//             mixinCollection.actionMixins.RemoveAt(i);
-//         };
-
 //     }
+//     //     mixinList.onAddDropdownCallback = (Rect rect, ReorderableList list) =>
+//     //     {
+//     //         GenericMenu dropdownMenu = new GenericMenu();
+//     //         string[] mixinGUIDs = AssetDatabase.FindAssets("l:Mixin");
 
-//     public void AddItem( object obj)
-//     {
-//         AssetInfo assetInfo = (AssetInfo)obj;
+//     //         for (int i = 0; i < mixinGUIDs.Length; i++)
+//     //         {
+//     //             string path = AssetDatabase.GUIDToAssetPath(mixinGUIDs[i]);
+//     //             string menuPath = path.Replace("Assets/Game Resources/Scripts/", "");
 
-//         string assetName = Path.GetFileNameWithoutExtension(assetInfo.assetPath);
+//     //             dropdownMenu.AddItem (new GUIContent(menuPath), false, AddItem, new AssetInfo { assetPath = path } );
+//     //         }
 
-//         Type assetType = Type.GetType(assetName + ", Assembly-CSharp");
+//     //         dropdownMenu.ShowAsContext();
+//     //     };
 
-//         MixinBase newMixin = (MixinBase)mixinCollection.gameObject.AddComponent(assetType);
-//         newMixin.showInfo = true;
-//         newMixin.Name = assetName;
-//         newMixin.showMixin = false;
+//     //     mixinList.onRemoveCallback = (ReorderableList List) =>
+//     //     {
+//     //         int i = mixinList.index;
+//     //         mixinCollection.actionMixins[i].showMixin = true;
+//     //         mixinCollection.actionMixins[i].hideFlags = HideFlags.None;
+//     //         mixinCollection.actionMixins.RemoveAt(i);
+//     //     };
 
-//         int index = mixinList.serializedProperty.arraySize ++;
-//         mixinList.serializedProperty.GetArrayElementAtIndex(index).objectReferenceValue = newMixin;
+//     // }
 
-//         serializedObject.ApplyModifiedProperties();
-//     }
+//     // public void AddItem( object obj)
+//     // {
+//     //     AssetInfo assetInfo = (AssetInfo)obj;
+
+//     //     string assetName = Path.GetFileNameWithoutExtension(assetInfo.assetPath);
+
+//     //     Type assetType = Type.GetType(assetName + ", Assembly-CSharp");
+
+//     //     MixinBase newMixin = (MixinBase)mixinCollection.gameObject.AddComponent(assetType);
+//     //     newMixin.showInfo = true;
+//     //     newMixin.Name = assetName;
+//     //     newMixin.showMixin = false;
+
+//     //     int index = mixinList.serializedProperty.arraySize ++;
+//     //     mixinList.serializedProperty.GetArrayElementAtIndex(index).objectReferenceValue = newMixin;
+
+//     //     serializedObject.ApplyModifiedProperties();
+//     // }
 
 //     public override void OnInspectorGUI()
 //     {

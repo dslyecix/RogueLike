@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Mixins/AnimatorTrigger")]
 public class AnimatorTrigger : MixinBase {
 
-    [SerializeField] List<Animator> animators;
+    [SerializeField] List<Animator> animators = new List<Animator>();
     [SerializeField] string trigger;
     private bool isReady = true;
 

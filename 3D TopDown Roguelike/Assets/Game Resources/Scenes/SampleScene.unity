@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1526980366}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.2257134, b: 0.30692226, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1190,6 +1190,54 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1001 &1105453184
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2081489223}
+    m_Modifications:
+    - target: {fileID: 4170886398787068, guid: 3c3fd7af2f729b94aab69efbd1c27886, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4170886398787068, guid: 3c3fd7af2f729b94aab69efbd1c27886, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4170886398787068, guid: 3c3fd7af2f729b94aab69efbd1c27886, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4170886398787068, guid: 3c3fd7af2f729b94aab69efbd1c27886, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4170886398787068, guid: 3c3fd7af2f729b94aab69efbd1c27886, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4170886398787068, guid: 3c3fd7af2f729b94aab69efbd1c27886, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4170886398787068, guid: 3c3fd7af2f729b94aab69efbd1c27886, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4170886398787068, guid: 3c3fd7af2f729b94aab69efbd1c27886, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114269132554419356, guid: 3c3fd7af2f729b94aab69efbd1c27886,
+        type: 2}
+      propertyPath: fireWeaponMixins
+      value: 
+      objectReference: {fileID: 11400000, guid: d77a696458762f541bdd0b5e42b000e0,
+        type: 2}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 3c3fd7af2f729b94aab69efbd1c27886, type: 2}
+  m_IsPrefabParent: 0
 --- !u!43 &1366391500
 Mesh:
   m_ObjectHideFlags: 0
@@ -1336,6 +1384,11 @@ Mesh:
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshOptimized: 0
+--- !u!4 &1452728135 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4170886398787068, guid: 3c3fd7af2f729b94aab69efbd1c27886,
+    type: 2}
+  m_PrefabInternal: {fileID: 1105453184}
 --- !u!1 &1526980365
 GameObject:
   m_ObjectHideFlags: 0
@@ -1442,6 +1495,34 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1630587635}
+--- !u!1 &1637917732
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1637917733}
+  m_Layer: 0
+  m_Name: WeaponTransform
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1637917733
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1637917732}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.64, y: 1.047, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2081489223}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1735178441
 GameObject:
   m_ObjectHideFlags: 0
@@ -2045,6 +2126,8 @@ Transform:
   m_Children:
   - {fileID: 997608243}
   - {fileID: 282840814}
+  - {fileID: 1637917733}
+  - {fileID: 1452728135}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
