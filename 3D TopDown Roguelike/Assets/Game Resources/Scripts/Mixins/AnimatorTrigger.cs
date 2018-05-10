@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[CreateAssetMenu(menuName = "Mixins/AnimatorTrigger")]
 public class AnimatorTrigger : MixinBase {
 
     [SerializeField] List<Animator> animators;

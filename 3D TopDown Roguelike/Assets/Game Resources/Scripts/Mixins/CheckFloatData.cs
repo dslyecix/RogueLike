@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[CreateAssetMenu(menuName = "Mixins/AnimatorTrigger")]
+
 public class CheckFloatData : MixinBase {
 
     [SerializeField] FloatData data;

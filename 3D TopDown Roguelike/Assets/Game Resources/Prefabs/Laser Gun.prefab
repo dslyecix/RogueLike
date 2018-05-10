@@ -137,10 +137,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4079365808916654}
-  - component: {fileID: 114836238759708468}
-  - component: {fileID: 114213554797600152}
-  - component: {fileID: 114004506807679966}
-  - component: {fileID: 114766939361983040}
   m_Layer: 0
   m_Name: GunLogic
   m_TagString: Untagged
@@ -741,41 +737,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114004506807679966
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1744962442107534}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8d7964dfe2d848488a27cf2c66aacbc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: AnimatorTrigger
-  showMixin: 0
-  showInfo: 1
-  animators:
-  - {fileID: 95048626134033472}
-  trigger: Fire
---- !u!114 &114213554797600152
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1744962442107534}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77e8005285d83934fa90c07b920e7fea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: FireRaycast
-  showMixin: 0
-  showInfo: 1
-  muzzlePoints:
-  - {fileID: 4114503483533584}
-  - {fileID: 4348718334404898}
-  range: 200
 --- !u!114 &114311225845027270
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -787,40 +748,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c6d1ef1abd98454faa4cdb72b878e60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fireWeaponMixins: {fileID: 114836238759708468}
---- !u!114 &114766939361983040
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1744962442107534}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6623f4bbab8cfaa42890e9c05c8ebe0f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Charge
-  showMixin: 1
-  showInfo: 0
-  chargeTime: 1
---- !u!114 &114836238759708468
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1744962442107534}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f63ed8077d2596d4a95a0b6a20f11a63, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: FireLogic
-  showMixin: 0
-  showInfo: 0
-  actionMixins:
-  - {fileID: 114213554797600152}
-  - {fileID: 114004506807679966}
-  - {fileID: 114766939361983040}
+  fireWeaponMixins: {fileID: 0}
 --- !u!136 &136121334543319780
 CapsuleCollider:
   m_ObjectHideFlags: 1

@@ -186,10 +186,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4841612615494288}
-  - component: {fileID: 114400730205930634}
-  - component: {fileID: 114123644289108204}
-  - component: {fileID: 114855019028768800}
-  - component: {fileID: 114432522492937412}
   m_Layer: 0
   m_Name: GunLogic
   m_TagString: Untagged
@@ -626,23 +622,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114123644289108204
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1987254637567556}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8d7964dfe2d848488a27cf2c66aacbc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: AnimatorTrigger
-  showMixin: 0
-  showInfo: 1
-  animators:
-  - {fileID: 95287662119571886}
-  trigger: Fire
 --- !u!114 &114269132554419356
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -654,59 +633,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 305b78b573eb88644904e703c4fbbd18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fireWeaponMixins: {fileID: 114400730205930634}
---- !u!114 &114400730205930634
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1987254637567556}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f63ed8077d2596d4a95a0b6a20f11a63, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: FireLogic
-  showMixin: 0
-  showInfo: 0
-  actionMixins:
-  - {fileID: 114123644289108204}
-  - {fileID: 114432522492937412}
-  - {fileID: 114855019028768800}
---- !u!114 &114432522492937412
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1987254637567556}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5330a1bac0d1da741a43f9c3086fde3f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: FireProjectile
-  showMixin: 0
-  showInfo: 1
-  bulletPrefab: {fileID: 1933994282474646, guid: 18a460428f50882409fb7a12b8b08a08,
-    type: 2}
-  fireForce: 100
-  muzzlePoints:
-  - {fileID: 4950947208750996}
---- !u!114 &114855019028768800
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1987254637567556}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da8c9f37bb54e874b87eaaa99fdaa600, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Cooldown
-  showMixin: 0
-  showInfo: 1
-  cooldownTimer: 0.5
+  fireWeaponMixins: {fileID: 0}
 --- !u!136 &136957726108310518
 CapsuleCollider:
   m_ObjectHideFlags: 1

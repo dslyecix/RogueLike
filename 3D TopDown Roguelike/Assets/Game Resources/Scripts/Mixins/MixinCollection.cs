@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu]
-[System.Serializable]
 public class MixinCollection : MixinBase {
 
     // This class will first check all of the GlobalChecks for a given set of Mixins,

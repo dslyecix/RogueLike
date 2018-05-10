@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class MouseRotate : MonoBehaviour {
 
+    public FloatReference reference;
+
     public float speedH = 2.0f;
     public float speedV = 2.0f;
 

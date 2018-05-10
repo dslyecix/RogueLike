@@ -304,12 +304,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4079365808916654}
-  - component: {fileID: 114989618998270338}
-  - component: {fileID: 114530437338653248}
-  - component: {fileID: 114875409169175892}
-  - component: {fileID: 114402308477517860}
-  - component: {fileID: 114163259587516820}
-  - component: {fileID: 114720111730946186}
   m_Layer: 0
   m_Name: GunLogic
   m_TagString: Untagged
@@ -1562,53 +1556,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114163259587516820
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1744962442107534}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35180700612d05846b30a5a1f6627971, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: DecrementFloatData
-  showMixin: 0
-  showInfo: 1
-  data: {fileID: 114402308477517860}
-  decrementAmount: 3
---- !u!114 &114402308477517860
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1744962442107534}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e257c5d924294b84a9b6b5206b630cde, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: FloatData
-  showMixin: 0
-  showInfo: 1
-  data: 30
-  maxValue: 30
---- !u!114 &114530437338653248
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1744962442107534}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da8c9f37bb54e874b87eaaa99fdaa600, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Cooldown
-  showMixin: 0
-  showInfo: 1
-  cooldownTimer: 1
 --- !u!114 &114642246365844058
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1620,67 +1567,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 305b78b573eb88644904e703c4fbbd18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fireWeaponMixins: {fileID: 114989618998270338}
---- !u!114 &114720111730946186
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1744962442107534}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8d7964dfe2d848488a27cf2c66aacbc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: AnimatorTrigger
-  showMixin: 0
-  showInfo: 1
-  animators:
-  - {fileID: 95501745822158710}
-  - {fileID: 95475939767712238}
-  - {fileID: 95048626134033472}
-  trigger: Fire
---- !u!114 &114875409169175892
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1744962442107534}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5330a1bac0d1da741a43f9c3086fde3f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: FireProjectile
-  showMixin: 0
-  showInfo: 1
-  bulletPrefab: {fileID: 1933994282474646, guid: 18a460428f50882409fb7a12b8b08a08,
-    type: 2}
-  fireForce: 50
-  muzzlePoints:
-  - {fileID: 4665149310430218}
-  - {fileID: 4919853200949624}
-  - {fileID: 4348718334404898}
---- !u!114 &114989618998270338
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1744962442107534}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f63ed8077d2596d4a95a0b6a20f11a63, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: FireLogic
-  showMixin: 0
-  showInfo: 0
-  actionMixins:
-  - {fileID: 114530437338653248}
-  - {fileID: 114875409169175892}
-  - {fileID: 114402308477517860}
-  - {fileID: 114163259587516820}
-  - {fileID: 114720111730946186}
+  fireWeaponMixins: {fileID: 0}
 --- !u!136 &136121334543319780
 CapsuleCollider:
   m_ObjectHideFlags: 1

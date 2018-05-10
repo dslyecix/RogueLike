@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[CreateAssetMenu(menuName = "Mixins/ChargeUp")]
+
 public class ChargeUp : MixinBase {
 
     [SerializeField] float chargeTime;
