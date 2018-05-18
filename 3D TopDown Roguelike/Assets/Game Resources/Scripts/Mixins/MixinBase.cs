@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+<<<<<<< HEAD
 public class MixinBase : ScriptableObject {
     
     public string Name;
@@ -11,6 +12,10 @@ public class MixinBase : ScriptableObject {
     [HideInInspector]
     public bool showInfo;
 
+=======
+public class MixinBase : MonoBehaviour {
+    
+>>>>>>> parent of 58e9d58... Work 2
     // Global checks are intended to halt the 'entire process' of a set of Mixins.  Eg if
     // an animation hasn't finished playing, we don't want allow ANY of the shoot logic
     // to begin to happen.

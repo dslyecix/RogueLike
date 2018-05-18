@@ -119,6 +119,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4735930604543870}
   - component: {fileID: 95048626134033472}
+  - component: {fileID: 114316538596815426}
+  - component: {fileID: 114378337436539064}
   m_Layer: 0
   m_Name: GunObject (2)
   m_TagString: Untagged
@@ -273,6 +275,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4589569689600620}
   - component: {fileID: 95475939767712238}
+  - component: {fileID: 114956847405310108}
+  - component: {fileID: 114353208870014404}
   m_Layer: 0
   m_Name: GunObject (1)
   m_TagString: Untagged
@@ -289,6 +293,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4774867933567616}
   - component: {fileID: 95501745822158710}
+  - component: {fileID: 114617653305615182}
+  - component: {fileID: 114131244035018602}
   m_Layer: 0
   m_Name: GunObject
   m_TagString: Untagged
@@ -304,6 +310,14 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4079365808916654}
+<<<<<<< HEAD
+=======
+  - component: {fileID: 114151004131227166}
+  - component: {fileID: 114265442369026518}
+  - component: {fileID: 114500117855561008}
+  - component: {fileID: 114237795661078456}
+  - component: {fileID: 114861627013350752}
+>>>>>>> parent of 58e9d58... Work 2
   m_Layer: 0
   m_Name: GunLogic
   m_TagString: Untagged
@@ -1556,6 +1570,140 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+<<<<<<< HEAD
+--- !u!114 &114642246365844058
+=======
+--- !u!114 &114131244035018602
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1727470434246304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8d7964dfe2d848488a27cf2c66aacbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 95501745822158710}
+  trigger: Reload
+--- !u!114 &114151004131227166
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1744962442107534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f63ed8077d2596d4a95a0b6a20f11a63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: 
+  actionMixins:
+  - {fileID: 114265442369026518}
+  - {fileID: 114500117855561008}
+  - {fileID: 114617653305615182}
+  - {fileID: 114956847405310108}
+  - {fileID: 114316538596815426}
+  - {fileID: 114861627013350752}
+--- !u!114 &114237795661078456
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1744962442107534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e257c5d924294b84a9b6b5206b630cde, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 12
+  maxValue: 12
+--- !u!114 &114265442369026518
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1744962442107534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5330a1bac0d1da741a43f9c3086fde3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 1933994282474646, guid: 18a460428f50882409fb7a12b8b08a08,
+    type: 2}
+  fireForce: 100
+  muzzlePoints:
+  - {fileID: 4665149310430218}
+  - {fileID: 4919853200949624}
+  - {fileID: 4348718334404898}
+--- !u!114 &114316538596815426
+>>>>>>> parent of 58e9d58... Work 2
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1296207222255286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8d7964dfe2d848488a27cf2c66aacbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 95048626134033472}
+  trigger: Fire
+--- !u!114 &114353208870014404
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1643277993738482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8d7964dfe2d848488a27cf2c66aacbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 95475939767712238}
+  trigger: Reload
+--- !u!114 &114378337436539064
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1296207222255286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8d7964dfe2d848488a27cf2c66aacbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+<<<<<<< HEAD
+  fireWeaponMixins: {fileID: 0}
+=======
+  animator: {fileID: 95048626134033472}
+  trigger: Reload
+--- !u!114 &114500117855561008
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1744962442107534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da8c9f37bb54e874b87eaaa99fdaa600, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cooldownTimer: 0.2
+--- !u!114 &114617653305615182
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1727470434246304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8d7964dfe2d848488a27cf2c66aacbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 95501745822158710}
+  trigger: Fire
 --- !u!114 &114642246365844058
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1567,7 +1715,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 305b78b573eb88644904e703c4fbbd18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fireWeaponMixins: {fileID: 0}
+  fireWeaponMixins: {fileID: 114151004131227166}
+--- !u!114 &114861627013350752
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1744962442107534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35180700612d05846b30a5a1f6627971, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 114237795661078456}
+  decrementAmount: 3
+--- !u!114 &114956847405310108
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1643277993738482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8d7964dfe2d848488a27cf2c66aacbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 95475939767712238}
+  trigger: Fire
+>>>>>>> parent of 58e9d58... Work 2
 --- !u!136 &136121334543319780
 CapsuleCollider:
   m_ObjectHideFlags: 1

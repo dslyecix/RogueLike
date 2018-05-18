@@ -53,6 +53,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4735930604543870}
   - component: {fileID: 95048626134033472}
+  - component: {fileID: 114316538596815426}
+  - component: {fileID: 114378337436539064}
   m_Layer: 0
   m_Name: GunObject
   m_TagString: Untagged
@@ -137,6 +139,12 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4079365808916654}
+<<<<<<< HEAD
+=======
+  - component: {fileID: 114151004131227166}
+  - component: {fileID: 114890447024782404}
+  - component: {fileID: 114158703941958744}
+>>>>>>> parent of 58e9d58... Work 2
   m_Layer: 0
   m_Name: GunLogic
   m_TagString: Untagged
@@ -737,6 +745,35 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+<<<<<<< HEAD
+--- !u!114 &114311225845027270
+=======
+--- !u!114 &114151004131227166
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1744962442107534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f63ed8077d2596d4a95a0b6a20f11a63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: 
+  actionMixins:
+  - {fileID: 114890447024782404}
+  - {fileID: 114316538596815426}
+--- !u!114 &114158703941958744
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1744962442107534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21ca9db3a2759ab448a577a741e6b2e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114311225845027270
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -748,7 +785,53 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c6d1ef1abd98454faa4cdb72b878e60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fireWeaponMixins: {fileID: 114151004131227166}
+--- !u!114 &114316538596815426
+>>>>>>> parent of 58e9d58... Work 2
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1296207222255286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8d7964dfe2d848488a27cf2c66aacbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+<<<<<<< HEAD
   fireWeaponMixins: {fileID: 0}
+=======
+  animator: {fileID: 95048626134033472}
+  trigger: Fire
+--- !u!114 &114378337436539064
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1296207222255286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8d7964dfe2d848488a27cf2c66aacbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 95048626134033472}
+  trigger: Reload
+--- !u!114 &114890447024782404
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1744962442107534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77e8005285d83934fa90c07b920e7fea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  muzzlePoints:
+  - {fileID: 4114503483533584}
+  - {fileID: 4348718334404898}
+  range: 200
+>>>>>>> parent of 58e9d58... Work 2
 --- !u!136 &136121334543319780
 CapsuleCollider:
   m_ObjectHideFlags: 1
